@@ -1,0 +1,13 @@
+<nav class="nav">
+    <!-- Brand Label -->
+    <span id="nav-brand"><strong>@Brand</strong></span>
+    <!-- Hamburger Icon -->
+    <i id="hamburger-icon" class="fas fa-bars" (click) = "toggleContents()"></i>
+    <!-- Navigation Tabs -->
+    <ul class="nav-list" [ngStyle]="{'display': displayValue}">
+        <li class="nav-item" ><a [ngClass] = "{'active': selectedTab == 0}" (click) = "selectTab(0)" href="#">Home</a></li>
+        <li class="nav-item"><a [ngClass] = "{'active': selectedTab == 1}"(click) = "selectTab(1)" href="#">About</a></li>
+        <li class="nav-item"><a [ngClass] = "{'active': selectedTab == 2}"(click) = "selectTab(2)" href="#">Services</a></li>
+        <li class="nav-item"><a [ngClass] = "{'active': selectedTab == 3}"(click) = "selectTab(3)" href="#">Contact</a></li>
+    </ul>
+  </nav>
